@@ -17,7 +17,7 @@ public class CategoriaController {
     private CategoriaServicio servicio;
 
     @GetMapping({ "/", "/categorias", "/index" })
-    public String listarEmpleados(Model modelo) {
+    public String listarCategorias(Model modelo) {
         modelo.addAttribute("categorias", servicio.listarTodosLasCategorias());
         
         return "categorias"; // nos retorna al archivo categorias
